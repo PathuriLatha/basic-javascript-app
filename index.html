@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body id="body">
+<h1>Welcome To Register Page</h1>
+<form name="myform"  action="displayValues.html" onsubmit="return allValidate( )">
+  <table align="center">
+    <tr>
+      <td class="textField"><b>First Name</b> </td>
+      <td>
+        <input type="text" class="inputText" placeholder="Enter first name" id="fname_id" onchange="fnameValidation()" required>
+        <span><p id="sfname"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"><b>Last Name</b> </td>
+      <td>
+        <input type="text" class="inputText" placeholder="Enter last name" id="lname_id" onchange="lnameValidation()" required>
+        <span><p id="slname"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"><b>Date of birth</b> </td>
+      <td>
+        <input  type="text" class="inputText" placeholder="Enter DOB" id="dob_id" onchange="dobValidation()" required>
+        <span><p id="sdob"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"><b>Email</b> </td>
+      <td>
+        <input  type="text" class="inputText" placeholder="Enter email id" id="email_id" onchange="emailVaildation()" required>
+        <span><p id="semail"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"><b>Password</b> </td>
+      <td>
+        <input  type="password" class="inputText" placeholder="Enter password" id="password_id" onchange="passwordVaildation()" required>
+        <span><p id="spassword"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"><b>Confirm Password </b> </td>
+      <td>
+        <input  type="password" class="inputText" placeholder="Enter confirm password" id="cpassword_id" onchange="cpasswordValidation()" required>
+        <span><p id="scpassword"></p></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="textField"></td>
+      <td>
+        <input type="submit" id="button" value="Register" >
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+<script type="text/javascript" src="validations.js"></script>
+</html>

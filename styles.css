@@ -1,0 +1,56 @@
+
+.inputText{
+	padding:8px;
+	border : 2px solid salmon;
+}
+#body{
+	background-image: url("office.jpg");
+}
+#button{
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+#bodyId{
+	background-color : aqua ;
+	/*background-image : url("water.jpg");
+	background-position : auto ;
+	background-size : 1400px 600px;*/
+	text-align : center;
+}
+h1{
+	color : crimson;
+	text-align : center;
+}
+
+.textField{
+	/*color : darkturquoise ;*/
+	color : darkblue ;
+}
+span{
+	color : red;
+}
+input, b{
+	font-size : 20px ;
+}
+.valuesHeader{
+	background-color : powderblue ;
+	color : red;
+}
+.valuesData{
+	background-color: yellowgreen ;
+}
+.valuesTable{
+	border-color : aqua;
+}
+#h1{
+	text-align : center ;
+	color : darkblue;
+}
