@@ -12,6 +12,16 @@ function fnameValidation( ){
 	var check = (fname.value).match(letters);
 	//alert(check);
 	// alert(fname.value);
+	/*var b = true;
+	//alert("check typeof : "+check.typeof);
+	if(fname.value.typeof == b.typeof){
+	  alert("typeof fname : "+fname.value.typeof);
+	  alert("typeof true : "+b.typeof);
+	  console.log(fname.value.typeof);
+	}*/
+	if(typeof fname.value == "string"){
+    alert(typeof fname.value);
+	}
 	if(check==null || check==""){
 		// alert("if fname");
 		document.getElementById("sfname").innerHTML="enter valid name";
@@ -48,7 +58,7 @@ function dobValidation( ){
 	// alert("dobValidation");
 	// alert(dob.value);
 
-	var pattern =/^([0-9]{4})\/([0-9]{2})\/([0-9]{2})$/;
+	var pattern =/^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
 	if(pattern.test(dob.value)){
 		//alert("if dob");
 		document.getElementById("sdob").style.display="none";
@@ -129,13 +139,13 @@ function cpasswordValidation( ){
 
 function allValidate( ){
 
-	fname.addEventListener("blur", fnameValidation, true);
+	/*fname.addEventListener("blur", fnameValidation, true);
 	lname.addEventListener("blur", lnameValidation, true);
 	dob.addEventListener("blur", dobValidation, true);
 	mail.addEventListener("blur", emailVaildation, true);
 	pwd.addEventListener("blur", passwordVaildation, true);
 	cpwd.addEventListener("blur", cpasswordValidation, true);
-
+  */
 	sessionStorage.setItem("firstName", fname.value);
 	sessionStorage.setItem("lastName", lname.value);
 	sessionStorage.setItem("dateOfBirth", dob.value);
@@ -147,7 +157,7 @@ function allValidate( ){
 
 }
 
-function getValues( ){
+/*function getValues( ){
 	// alert("getValues");
 	// alert(displayValues);
 	// alert(sessionStorage);
@@ -167,6 +177,46 @@ function getValues( ){
 		  regValues += "<td class='valuesData' height='100'>"+sessionStorage.getItem("dateOfBirth")+"</td>";
 		  regValues += "<td class='valuesData' height='100'>"+sessionStorage.getItem("email")+"</td>";
 		  regValues += "<td class='valuesData' height='100'>"+sessionStorage.getItem("password")+"</td>";
+		  regValues += "</tr>";
+
+		var display = document.getElementById("displayId");
+		display.innerHTML = regValues;
+}*/
+
+function getValues( ){
+	// alert("getValues");
+	// alert(displayValues);
+	// alert(sessionStorage);
+	var regValues = "<table border='3' align='center' class='valuesTable'>";
+
+		  regValues += "<tr>";
+		  regValues += "<th class='valuesHeader' >Keys</th>";
+		  regValues += "<th class='valuesHeader' >Values</th>";
+		  regValues += "</tr>";
+
+		  regValues += "<tr>";
+		  regValues += "<td class='valuesData' >First Name</td>";
+		  regValues += "<td class='valuesData'>"+sessionStorage.getItem("firstName")+"</td>";
+		  regValues += "</tr>";
+
+		  regValues += "<tr>";
+		  regValues += "<td class='valuesData' >Last Name</td>";
+		  regValues += "<td class='valuesData'>"+sessionStorage.getItem("lastName")+"</td>";
+		  regValues += "</tr>";
+
+		  regValues += "<tr>";
+		  regValues += "<td class='valuesData' >Date Of Birth</td>";
+		  regValues += "<td class='valuesData'>"+sessionStorage.getItem("dateOfBirth")+"</td>";
+		  regValues += "</tr>";
+
+		  regValues += "<tr>";
+		  regValues += "<td class='valuesData' >Email</td>";
+		  regValues += "<td class='valuesData'>"+sessionStorage.getItem("email")+"</td>";
+		  regValues += "</tr>";
+
+		  regValues += "<tr>";
+		  regValues += "<td class='valuesData' >Password</td>";
+		  regValues += "<td class='valuesData'>"+sessionStorage.getItem("password")+"</td>";
 		  regValues += "</tr>";
 
 		var display = document.getElementById("displayId");

@@ -2,6 +2,14 @@
 .inputText{
 	padding:8px;
 	border : 2px solid salmon;
+	font-style: normal;
+}
+form{
+	border-radius: 5px;
+	background-color: white;
+	padding: 20px;
+	max-width: 500px;
+	margin : 0px auto;
 }
 #body{
 	background-image: url("office.jpg");
@@ -12,21 +20,23 @@
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
-	text-decoration: none;
 	display: inline-block;
 	font-size: 20px;
 	margin: 4px 2px;
 	cursor: pointer;
+	border-radius: 5px;
+	width : 200px;
 }
 #bodyId{
-	background-color : aqua ;
+	background-color :  ;
 	/*background-image : url("water.jpg");
 	background-position : auto ;
 	background-size : 1400px 600px;*/
 	text-align : center;
 }
 h1{
-	color : crimson;
+	/*color : crimson;*/
+	color : blue ;
 	text-align : center;
 }
 
@@ -36,6 +46,7 @@ h1{
 }
 span{
 	color : red;
+	font-size : 20px;
 }
 input, b{
 	font-size : 20px ;
@@ -43,12 +54,15 @@ input, b{
 .valuesHeader{
 	background-color : powderblue ;
 	color : red;
+	width : 300px;
+	font-size : 20px;
 }
 .valuesData{
 	background-color: yellowgreen ;
+	width : 300px;
 }
 .valuesTable{
-	border-color : aqua;
+	border-color : dodgerblue;
 }
 #h1{
 	text-align : center ;
