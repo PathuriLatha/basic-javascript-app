@@ -1,16 +1,17 @@
 
+form{
+	padding: 20px;
+	max-width: 500px;
+	margin : 0px auto;
+}
+
+/*
 .inputText{
 	padding:8px;
 	border : 2px solid salmon;
 	font-style: normal;
 }
-form{
-	border-radius: 5px;
-	background-color: white;
-	padding: 20px;
-	max-width: 500px;
-	margin : 0px auto;
-}
+
 #body{
 	background-image: url("office.jpg");
 }
@@ -28,20 +29,14 @@ form{
 	width : 200px;
 }
 #bodyId{
-	background-color :  ;
-	/*background-image : url("water.jpg");
-	background-position : auto ;
-	background-size : 1400px 600px;*/
 	text-align : center;
 }
 h1{
-	/*color : crimson;*/
 	color : blue ;
 	text-align : center;
 }
 
 .textField{
-	/*color : darkturquoise ;*/
 	color : darkblue ;
 }
 span{
@@ -67,4 +62,4 @@ input, b{
 #h1{
 	text-align : center ;
 	color : darkblue;
-}
+}*/

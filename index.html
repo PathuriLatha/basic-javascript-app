@@ -3,63 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Register form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
-<body id="body">
-<h1>Welcome To Register Page</h1>
-<form name="myform"  action="displayValues.html" onclick="return allValidate( )">
+<body id="body" class="bg-secondary">
+<h1 class="text-center text-warning"><b>Welcome To Register Page</b></h1>
+<form name="myform" class="bg-white rounded" action="displayValues.html" onsubmit="return allValidate( )">
   <table align="center">
     <tr>
-      <td class="textField"><b>First Name</b> </td>
+      <td class="text-info"><b>First Name</b> </td>
       <td>
-        <input type="text" class="inputText" placeholder="Enter first name" id="fname_id" onchange="fnameValidation()" required>
-        <span><p id="sfname"></p></span>
+        <input type="text" class="form-control is-valid" placeholder="Enter first name" id="fname_id" onchange="fnameValidation()">
+        <span><p class="text-danger font-italic" id="sfname"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"><b>Last Name</b> </td>
+      <td class="text-info"><b>Last Name</b> </td>
       <td>
-        <input type="text" class="inputText" placeholder="Enter last name" id="lname_id" onchange="lnameValidation()" required>
-        <span><p id="slname"></p></span>
+        <input type="text" class="form-control is-valid" placeholder="Enter last name" id="lname_id" onchange="lnameValidation()">
+        <span><p class="text-danger font-italic" id="slname"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"><b>Date of birth</b> </td>
+      <td class="text-info"><b>Date of birth</b> </td>
       <td>
-        <input  type="text" class="inputText" placeholder="Enter DOB" id="dob_id" onchange="dobValidation()" required>
-        <span><p id="sdob"></p></span>
+        <input  type="text" class="form-control is-valid" placeholder="Enter DOB" id="dob_id" onchange="dobValidation()">
+        <span><p class="text-danger font-italic" id="sdob"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"><b>Email</b> </td>
+      <td class="text-info"><b>Email</b> </td>
       <td>
-        <input  type="text" class="inputText" placeholder="Enter email id" id="email_id" onchange="emailVaildation()" required>
-        <span><p id="semail"></p></span>
+        <input  type="text" class="form-control is-valid" placeholder="Enter email id" id="email_id" onchange="emailVaildation()">
+        <span><p class="text-danger font-italic" id="semail"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"><b>Password</b> </td>
+      <td class="text-info"><b>Password</b> </td>
       <td>
-        <input  type="password" class="inputText" placeholder="Enter password" id="password_id" onchange="passwordVaildation()" required>
-        <span><p id="spassword"></p></span>
+        <input  type="password" class="form-control is-valid" placeholder="Enter password" id="password_id" onchange="passwordVaildation()">
+        <span><p class="text-danger font-italic" id="spassword"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"><b>Confirm Password </b> </td>
+      <td class="text-info"><b>Confirm Password </b> </td>
       <td>
-        <input  type="password" class="inputText" placeholder="Enter confirm password" id="cpassword_id" onchange="cpasswordValidation()" required>
-        <span><p id="scpassword"></p></span>
+        <input  type="password" class="form-control is-valid" placeholder="Enter confirm password" id="cpassword_id" onchange="cpasswordValidation()">
+        <span><p class="text-danger font-italic" id="scpassword"></p></span>
       </td>
     </tr>
     <tr>
-      <td class="textField"></td>
+      <td class="text-info"></td>
       <td>
-        <input type="submit" id="button" value="Register" >
+        <input type="submit" class="btn btn-success btn-lg" value="Register">
       </td>
     </tr>
   </table>
 </form>
   <script type="text/javascript" src="validations.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
